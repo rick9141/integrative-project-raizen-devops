@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RaizenDevops.Persistence;
 
 namespace RaizenDevops.API.Persistence.Migrations
 {
     [DbContext(typeof(RaizenDevopsDbContext))]
-    partial class RaizenDevopsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220924065554_MigrationV3")]
+    partial class MigrationV3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

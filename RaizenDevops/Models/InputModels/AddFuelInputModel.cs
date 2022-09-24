@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace RaizenDevops.Models.InputModels
 {
-    public class CreateFuelInputModel
+    public class AddFuelInputModel
     {
+        public string FuelName { get; set; }
         public string Description { get; set; }
         public int Value { get; set; }
         public DateTime Date { get; set; }
