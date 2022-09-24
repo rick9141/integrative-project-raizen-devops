@@ -2,7 +2,7 @@
 
 namespace RaizenDevops.Core.Entities
 {
-    public class Fuel
+    public class Fuel : BaseEntity
     {
         protected Fuel()
         {

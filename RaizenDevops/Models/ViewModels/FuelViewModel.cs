@@ -18,4 +18,3 @@ namespace RaizenDevops.Models
         public DateTime Date { get; set; }
     }
 }
-}
