@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  raizendevops.api:
+    image: ${DOCKER_REGISTRY-}raizendevopsapi
+    build:
+      context: .
+      dockerfile: RaizenDevops/Dockerfile
