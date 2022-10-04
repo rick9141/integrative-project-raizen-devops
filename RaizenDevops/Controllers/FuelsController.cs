@@ -24,7 +24,7 @@ namespace RaizenDevops.Controllers
         }
 
         /// <summary>
-        /// Traz todos os combústiveis - teest
+        /// Traz todos os combústiveis
         /// </summary>
         /// <returns></returns>
         [HttpGet]
