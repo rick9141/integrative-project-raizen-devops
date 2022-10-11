@@ -24,7 +24,7 @@ namespace RaizenDevops.Controllers
         }
 
         /// <summary>
-        /// Traz todos os combústiveis.
+        /// Traz todos os combústiveis no banco
         /// </summary>
         /// <returns></returns>
         [HttpGet]
@@ -58,7 +58,7 @@ namespace RaizenDevops.Controllers
         }
 
         /// <summary>
-        /// Pesquisa um combústivel pelo nome
+        /// Pesquisa um combústivel pelo nome dele
         /// </summary>
         /// <param name="fuelName"></param>
         /// <returns></returns>
