@@ -18,6 +18,18 @@ namespace RaizenDevops
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+            .ConfigureAppConfiguration((context, config) =>
+            {
+                //if (context.HostingEnvironment.IsProduction())
+                //{
+                    var builtConfig = config.Build();
+
+                    config.AddAzureKeyVault(
+                        builtConfig["AzureKeyVault:Vault"],
+                        builtConfig["AzureKeyVault:ClientId"],
+                        builtConfig["AzureKeyVault:ClientSecret"]);
+                //}
+            })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
