@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: raizendevopsapi 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: raizendevopsapi
+  template:
+    metadata:
+      labels:
+        app: raizendevopsapi 
+    spec:
+      containers:
+        - name: raizendevopsapi 
+          image: projetointegradorrai.azurecr.io/raizendevopsapi
+          ports:
+          - containerPort: 80
